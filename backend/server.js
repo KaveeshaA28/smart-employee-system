@@ -15,6 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/employees", require("./routes/employeeRoutes"));
+app.use("/api/attendance", require("./routes/attendanceRoutes"));
 
 app.get("/", (req, res) => {
   res.json({ message: "Smart Employee System API Running" });
